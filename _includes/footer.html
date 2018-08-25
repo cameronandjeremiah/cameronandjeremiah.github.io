@@ -1,0 +1,22 @@
+<!--  Begin Footer -->
+
+<footer class="site-footer grid-x grid-padding-x mtl" role="contentinfo">
+    <div class="large-12 cell">
+      <hr>
+      <ul class="menu quiet copyright align-right">
+        {% if site.twitter.username %}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter.username | replace: "@", "" }}"><i class="fab fa-twitter"></i> @{{ site.twitter.username | replace: "@", ""}}</a>
+        </li>
+        {% endif %}
+        {% if site.github %}
+        <li>
+          <a href="https://github.com/{{ site.github }}/"><i class="fab fa-github"></i> {{ site.github }}</a>
+        </li>
+        {% endif %}
+      </ul>
+      <div class="menu quiet">
+        {% include menu.html %}
+      </div>
+    </div>
+  </footer>

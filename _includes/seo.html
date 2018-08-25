@@ -1,0 +1,124 @@
+{% if site.url %}
+  {% assign seo_url = site.url | append: site.baseurl %}
+{% endif %}
+
+<!-- Create the Page Title -->
+{% if page.title %}
+  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+{% endif %}
+
+<!-- Clean-up seo title -->
+{% if seo_title %}
+  {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+<!-- Assign a canonical URL -->
+{% if site.url %}
+  {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
+{% endif %}
+
+<title>
+    {{ seo_title | default: site.title }}
+</title>
+
+<!-- Create the Description -->
+{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
+
+{% if seo_description %}
+  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+<meta name="description" content="{{ seo_description }}">
+
+<!-- Create the Author -->
+{% assign seo_author = page.author | default: site.author %}
+
+<meta name="author" content="{{ seo_author }}">
+
+<!--  Set keywords -->
+{% if site.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
+{% endif %}
+
+<!-- Create the Open Graph -->
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
+
+
+{% if seo_url %}
+  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+{% endif %}
+
+{% if page.excerpt %}
+  <meta property="og:description" content="{{ seo_description }}">
+{% endif %}
+
+<!--  Open Graph Image -->
+{% if page.header.image %}
+    <meta name="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | absolute_url }}{% endif %}">
+  {% elsif page.header.teaser %}
+      <meta name="og:image" content="{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | absolute_url }}{% endif %}">
+  {% elsif site.og_image %}
+      <meta name="og:image" content="{{ site.og_image | absolute_url }}">
+{% endif %}
+
+<!-- Create Twitter Graph -->
+
+{% if site.twitter.username %}
+  <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:url" content="{{ canonical_url }}">
+
+  {% if page.header.image %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | absolute_url }}{% endif %}">
+  {% else %}
+    <meta name="twitter:card" content="summary">
+    {% if page.header.teaser %}
+      <meta name="twitter:image" content="{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | absolute_url }}{% endif %}">
+    {% elsif site.og_image %}
+      <meta name="twitter:image" content="{{ site.og_image | absolute_url }}">
+    {% endif %}
+  {% endif %}
+
+{% endif %}
+
+<!-- Create Facebook Graph -->
+
+{% if site.facebook.publisher %}
+  <meta property="article:publisher" content="{{ site.facebook.publisher }}">
+{% endif %} 
+
+{% if page.date %}
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+
+{% if site.og_image %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SocialEvent",
+      "name": {{ site.name }}
+      "location": {{ site.location }}
+      "startDate": {{ site.event_date }}
+      "url": {{ seo_url | jsonify }},
+      "image": {{ site.og_image | absolute_url | jsonify }}
+    }
+  </script>
+{% endif %}
+
+<!-- Site Verifications for Search Ownership -->
+
+{% if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+{% endif %}
+
+{% if site.bing_site_verification %}
+  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+{% endif %}
+
+<!-- end SEO -->

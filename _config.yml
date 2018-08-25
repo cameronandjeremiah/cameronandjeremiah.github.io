@@ -1,0 +1,36 @@
+title: Jer's Jekyll and Foundation 6 Starter
+author: Jeremiah Baarbe
+email: 
+description: >-
+  Based on @DaigoFuji's Jekyll-foundation 6 starter for github pages.
+
+# Base
+url :  ""
+baseurl: ""
+
+
+# SEO Settings
+title_separator: "―"
+locale: "en"
+og_image:
+twitter:
+  username: "@baarbeh"
+facebook:
+  publisher: 695210511
+google_site_verification: # Add verification code
+bing_site_verification:
+keywords : # Seperate with comma 
+brand : My Project
+
+# Analytics
+analytics:
+  provider: "google"
+  google:
+    tracking_id: ""
+
+# Build Settings
+
+markdown : kramdown
+exclude :
+  - node_modules
+plugins: 
