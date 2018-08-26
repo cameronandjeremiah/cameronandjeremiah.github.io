@@ -20,9 +20,11 @@ h1, h2, h3, h4, h5, h6 {
     local("scrogglet"),
     local("scroggletregular")
     url("assets/fonts/scrogglet.ttf")
-    format("truetype"),
+    format("truetype");
+  src:
     url("assets/fonts/scrogglet.eot")
-    format("opentype"),
+    format("opentype");
+  src:
     url('scrogglet-webfont.woff2') 
     format('woff2'),
     url('scrogglet-webfont.woff')
