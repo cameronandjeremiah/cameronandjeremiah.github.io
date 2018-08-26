@@ -1,0 +1,24 @@
+<div class="title-bar hide-for-medium">
+  <div class="title-bar-left">
+      <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/website-logo2.png" alt="Cameron and Jeremiah"></a>
+  </div>
+  <div class="title-bar-right menu align-right simple mts">
+      <li>
+        <button class="secondary button" data-toggle="offCanvas" type="button">
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </li>
+  </div>
+</div>
+<div class="grid-y show-for-medium hide-for-large">
+  <div class="grid-container">
+    <img class="cell medium-header-img", src="{{ site.url }}/assets/img/website-logo2.png" alt="">
+    <div class="cell menu align-center">
+        {% include menu.html %}
+     </div>
+  </div>
+</div>
+<div class="menu align-center simple mtm grid-y show-for-large">
+    {% include menu.html %}
+</div>
+

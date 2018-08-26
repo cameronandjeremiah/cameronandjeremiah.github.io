@@ -65,6 +65,14 @@
 // 1. Global
 // ---------
 
+// Add Brand Colors
+$watermelon: #F44975;
+$mistyrose: #FFD2F3;
+$darkseagreen: #6EBF87;
+$steelblue: #2492D2;
+$darkslateblue: #3C418B;
+
+
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
@@ -75,13 +83,6 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-
-// Add Brand Colors
-$watermelon: #F44975;
-$mistyrose: #FFD2F3;
-$darkseagreen: #6EBF87;
-$steelblue: #2492D2;
-$darkslateblue: #3C418B;
 
 // Start Supporter Colors
 $light-gray: #e6e6e6;
