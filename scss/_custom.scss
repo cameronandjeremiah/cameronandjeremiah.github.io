@@ -18,17 +18,19 @@ h1, h2, h3, h4, h5, h6 {
   src:
     local("Scrogglet"),
     local("scrogglet"),
+  src:
+    url('assets/fonts/scrogglet-webfont.woff2') 
+    format('woff2'),
+    url('assets/fonts/scrogglet-webfont.woff')
+    format('woff');
+  src:  
     local("scroggletregular")
     url("assets/fonts/scrogglet.ttf")
     format("truetype");
   src:
     url("assets/fonts/scrogglet.eot")
     format("opentype");
-  src:
-    url('scrogglet-webfont.woff2') 
-    format('woff2'),
-    url('scrogglet-webfont.woff')
-    format('woff');  
+  
 }
 
 .nav-font {
