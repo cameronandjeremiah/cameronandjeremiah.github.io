@@ -11,23 +11,26 @@
     {% include head.html %}
   </head>        
   <body>
-    {% include menu_button.html %}
-    <div class="off-canvas-content" data-off-canvas-content>
-    {% include nav.html %}
-
-      <div class="grid-container">
-        <!-- START BODY -->
-        {{ content }}
-        <!-- END BODY -->
-        <!-- START FOOTER -->
-        {% unless page.footer == 'disable' %}
-          {% include footer.html %}
-        {% endunless %}
-        <!-- END FOOTER -->
-      </div><!-- end .grid-container -->
-
-    </div><!-- end .off-canvas-content, div starts in nav.html-->
-    
+    <div class="grid-y grid-frame">
+        {% include menu_off_canvas.html %}
+        <div class="cell shrink header">
+        <div class="off-canvas-content" data-off-canvas-content>
+          {% include nav.html %}
+        </div>
+      </div>
+      <div class="cell auto body off-canvas-content cell-block-container" data-off-canvas-content>
+          <!-- START BODY -->
+          {{ content }}
+          <!-- END BODY -->
+      </div>  <!-- end .body cell -->
+      <div class="cell shrink footer off-canvas-content cell-block-container" data-off-canvas-content>
+          <!-- START FOOTER -->
+          {% unless page.footer == 'disable' %}
+            {% include footer.html %}
+          {% endunless %}
+          <!-- END FOOTER -->
+      </div> <!-- end .footer -->
+    </div>
     {% include scripts.html %}
 
   </body>

@@ -124,32 +124,28 @@
 
   </head>        
   <body>
-    <!-- START OFF CANVAS MENU -->
+    <div class="grid-y grid-frame">
+        <!-- START OFF CANVAS MENU -->
 <div class="off-canvas position-right" data-off-canvas id="offCanvas">
     <div class="vertical menu mtl">
         <li>
-  <a href="http://localhost:4000">
-    <i class="fas fa-home"></i> Home
-  </a>
-</li>
-<li>
-   <a href="https://github.com/daigofuji/jekyll-foundation-6-starter">
-    <i class="fab fa-github"></i> Source
+   <a class="nav-font", href="https://github.com/daigofuji/jekyll-foundation-6-starter">
+    Our Story
    </a>
 </li>
 <li>
-  <a href="page-html-unit-test.html">
-    <i class="fas fa-flask"></i> Unit Test
+  <a class="nav-font", href="page-html-unit-test.html">
+    Blowing Rock
   </a>
 </li>
 <li>
-  <a href="page-foundation-example.html">
-    <i class="fas fa-magic"></i> Foundation
+  <a class="nav-font", href="page-foundation-example.html">
+    Information
   </a>
 </li>
 <li>
-  <a href="page-template-example.html">
-    <i class="fas fa-object-group"></i> Template
+  <a class="nav-font", href="page-template-example.html">
+    Registry
   </a>
 </li>
     </div>
@@ -158,8 +154,9 @@
     </button>
   </div><!-- end .off-canvas -->
   <!-- END OFF CANVAS MENU -->
-    <div class="off-canvas-content" data-off-canvas-content>
-    
+        <div class="cell shrink header">
+        <div class="off-canvas-content" data-off-canvas-content>
+          
 <!-- START ON CANVAS MENU -->
     <div class="title-bar">
       <div class="title-bar-left">
@@ -168,28 +165,23 @@
       <div class="title-bar-right mts">
         <div class="show-for-medium menu align-right simple quiet">
           <li>
-  <a href="http://localhost:4000">
-    <i class="fas fa-home"></i> Home
-  </a>
-</li>
-<li>
-   <a href="https://github.com/daigofuji/jekyll-foundation-6-starter">
-    <i class="fab fa-github"></i> Source
+   <a class="nav-font", href="https://github.com/daigofuji/jekyll-foundation-6-starter">
+    Our Story
    </a>
 </li>
 <li>
-  <a href="page-html-unit-test.html">
-    <i class="fas fa-flask"></i> Unit Test
+  <a class="nav-font", href="page-html-unit-test.html">
+    Blowing Rock
   </a>
 </li>
 <li>
-  <a href="page-foundation-example.html">
-    <i class="fas fa-magic"></i> Foundation
+  <a class="nav-font", href="page-foundation-example.html">
+    Information
   </a>
 </li>
 <li>
-  <a href="page-template-example.html">
-    <i class="fas fa-object-group"></i> Template
+  <a class="nav-font", href="page-template-example.html">
+    Registry
   </a>
 </li>
         </div>
@@ -199,10 +191,11 @@
       </div>
     </div>
   <!-- END ON CANVAS MENU-->
-
-      <div class="grid-container">
-        <!-- START BODY -->
-        <div class="callout large">
+        </div>
+      </div>
+      <div class="cell auto body off-canvas-content cell-block-container" data-off-canvas-content>
+          <!-- START BODY -->
+          <div class="callout large">
   <div class="grid-x grid-padding-x">
     <div class="small-12 cell text-center">
       <h1 class="mtl">Use Foundation starter templates</h1>
@@ -291,10 +284,12 @@
   <div class="cell"><img class="thumbnail" src="http://placehold.it/550x550"></div>
 </div>
     
-        <!-- END BODY -->
-        <!-- START FOOTER -->
-        
-          <!--  Begin Footer -->
+          <!-- END BODY -->
+      </div>  <!-- end .body cell -->
+      <div class="cell shrink footer off-canvas-content cell-block-container" data-off-canvas-content>
+          <!-- START FOOTER -->
+          
+            <!--  Begin Footer -->
 
 <footer class="site-footer grid-x grid-padding-x mtl" role="contentinfo">
     <div class="large-12 cell">
@@ -309,39 +304,32 @@
       </ul>
       <div class="menu quiet">
         <li>
-  <a href="http://localhost:4000">
-    <i class="fas fa-home"></i> Home
-  </a>
-</li>
-<li>
-   <a href="https://github.com/daigofuji/jekyll-foundation-6-starter">
-    <i class="fab fa-github"></i> Source
+   <a class="nav-font", href="https://github.com/daigofuji/jekyll-foundation-6-starter">
+    Our Story
    </a>
 </li>
 <li>
-  <a href="page-html-unit-test.html">
-    <i class="fas fa-flask"></i> Unit Test
+  <a class="nav-font", href="page-html-unit-test.html">
+    Blowing Rock
   </a>
 </li>
 <li>
-  <a href="page-foundation-example.html">
-    <i class="fas fa-magic"></i> Foundation
+  <a class="nav-font", href="page-foundation-example.html">
+    Information
   </a>
 </li>
 <li>
-  <a href="page-template-example.html">
-    <i class="fas fa-object-group"></i> Template
+  <a class="nav-font", href="page-template-example.html">
+    Registry
   </a>
 </li>
       </div>
     </div>
   </footer>
-        
-        <!-- END FOOTER -->
-      </div><!-- end .grid-container -->
-
-    </div><!-- end .off-canvas-content, div starts in nav.html-->
-    
+          
+          <!-- END FOOTER -->
+      </div> <!-- end .footer -->
+    </div>
     <!-- Load Java Script -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
