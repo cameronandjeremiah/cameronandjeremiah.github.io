@@ -75,13 +75,22 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
+
+// Add Brand Colors
+$watermelon: #F44975;
+$mistyrose: #FFD2F3;
+$darkseagreen: #6EBF87;
+$steelblue: #2492D2;
+$darkslateblue: #3C418B;
+
+// Start Supporter Colors
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $darkslateblue;//$black;
 $body-font-family: 'Nanum Myeongjo', serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -129,7 +138,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "scrogglet","Raleway","Helvetica Neue",Helvetica,sans-serif;
+$header-font-family: "scrogglet", sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
