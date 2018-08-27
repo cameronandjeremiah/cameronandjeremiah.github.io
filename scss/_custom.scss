@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "scrogglet";
   src: 
-    // local("Scrogglet"), local("scrogglet"), local("scroggletregular"),
+    local("Scrogglet"), local("scrogglet"), local("scroggletregular"),
     url('font/scrogglet-webfont.woff2') format('woff2'),
     url('font/scrogglet-webfont.woff') format('woff'),
     url("font/scrogglet.ttf") format('truetype'),

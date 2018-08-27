@@ -1,6 +1,8 @@
 <div class="title-bar hide-for-medium">
   <div class="title-bar-left">
+      {% unless page.header %}
       <a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/website-logo2.png" alt="Cameron and Jeremiah"></a>
+      {% endunless %}
   </div>
   <div class="title-bar-right menu align-right mrm simple mts">
       <li>
@@ -8,7 +10,7 @@
           <i aria-hidden="true" class="fas fa-bars"></i>
         </button>
       </li>
-  </div>
+  </div>  
 </div>
 <div class="grid-y show-for-medium mts hide-for-large">
   <div class="grid-container">
