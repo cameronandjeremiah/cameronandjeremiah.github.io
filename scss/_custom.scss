@@ -12,24 +12,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Add Custom Font
-
 @font-face {
-  font-family: 'scrogglet';
-  src:
-    local("Scrogglet"),
-    local("scrogglet");
-  src:
-    url('assets/fonts/scrogglet-webfont.woff2') 
-    format('woff2'),
-    url('assets/fonts/scrogglet-webfont.woff')
-    format('woff');
-  src:  
-    local("scroggletregular")
-    url("assets/fonts/scrogglet.ttf")
-    format("truetype");
-  src:
-    url("assets/fonts/scrogglet.eot")
-    format("opentype");
+  font-family: "scrogglet";
+  src: 
+    // local("Scrogglet"), local("scrogglet"), local("scroggletregular"),
+    url('font/scrogglet-webfont.woff2') format('woff2'),
+    url('font/scrogglet-webfont.woff') format('woff'),
+    url("font/scrogglet.ttf") format('truetype'),
+    url("font/scrogglet.eot") format('embedded-opentype');
 }
 
 .nav-font {
