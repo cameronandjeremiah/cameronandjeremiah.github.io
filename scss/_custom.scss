@@ -11,6 +11,49 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: lowercase;
 }
 
+.fill-picture {
+  height: 100vh;
+  //width: 100vw;
+  background-size: 175%;
+    // width: initial;
+    background-repeat: no-repeat;
+    // max-width: initial;
+    // max-height: initial;
+    // background-size: contain;
+    background-position-x: right;
+    background-position-y: top;
+  }
+
+.fill-background {
+  height: 100vh;
+  background-color: $mistyrose;
+}
+
+.small-location {
+  //flex: 1 1 0px;
+  //bottom: 5rem;
+  max-height: 100%;
+  //padding-bottom: 25px;
+}
+
+.small-date {
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+  .fill-picture-large {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+      // width: initial;
+      background-repeat: no-repeat;
+      // max-width: initial;
+      // max-height: initial;
+      // background-size: contain;
+      background-position-x: right;
+    background-position-y: top;
+    }
+
 // Add Custom Font
 @font-face {
   font-family: "scrogglet";

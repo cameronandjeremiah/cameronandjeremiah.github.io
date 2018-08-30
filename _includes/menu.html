@@ -1,7 +1,4 @@
 <li>
-    <img class="hide-for-medium", src="{{ site.url }}/assets/img/website-logo2.png" alt="">
-  </li>
-<li>
    <a class="nav-font", href="">
     Our Story
    </a>
@@ -12,7 +9,9 @@
   </a>
 </li>
 <li>
-  <img class="show-for-large", src="{{ site.url }}/assets/img/website-logo2.png" alt="">
+  {% unless page.header_graphic %}
+  <img class="show-for-large", src="{{ site.url }}/assets/img/CalligraphyLettering_Web-01_test.png" alt="">
+  {% endunless %}
 </li>
 <li>
   <a class="nav-font", href="page-foundation-example.html">
