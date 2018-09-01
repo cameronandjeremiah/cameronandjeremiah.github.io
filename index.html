@@ -13,8 +13,13 @@ header_graphic: disable
         <div class="grid-x">
             <div class="cell small-1"></div>
             <div class="cell small-10">
+              <picture>
+                <source srcset="{{ site.url }}/assets/img/CalligraphyLettering_Web-horizontal_blue.png"
+                        media="(max-height: 550px)">  
                 <img src="{{ site.url }}/assets/img/CalligraphyLettering_Web-vertical_blue.png" alt="" class="hide-for-medium hide-for-large">
-                <img src="{{ site.url }}/assets/img/CalligraphyLettering_Web-horizontal.jpg" alt="" class="show-for-medium mtl">
+              </picture>
+                
+                <img src="{{ site.url }}/assets/img/CalligraphyLettering_Web-horizontal_blue.png" alt="" class="show-for-medium mtl">
             </div>
             <div class="cell small-1"></div>
         </div>
@@ -38,37 +43,55 @@ header_graphic: disable
           <div class="cell small-3 medium-4"></div>
         </div>
       </div> -->
-      <div class="cell small-7" id="watercolor">    
-           <!-- <img src="{{ site.url }}/assets/img/WatercolorLandscape_Web_test.jpg" alt=""> -->
-          <div class="fill-picture hide-for-medium" 
-            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.jpg');">
+      <div class="cell small-7" id="watercolor">
+        <div class="hide-for-medium"> <!-- display watercolor and text on mobile -->
+            <div class="fill-picture" 
+              style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
             </div>
             <div class="small-details">
               <div class="grid-x">
                 <div class="cell small-2"></div>
                 <div class="cell small-8">
-                    <img src="{{ site.url }}/assets/img/hashtag_white.png" alt="">
+                  <img src="{{ site.url }}/assets/img/hashtag_white.png" alt="" class="hashtag">
                 </div>
                 <div class="cell small-2"></div>
               </div>
               <div class="grid-x">
                 <div class="cell small-1"></div>
                 <div class="cell small-10">
-                    <img src="{{ site.url }}/assets/img/CalligraphyLettering_location_vertical_white.png" alt="" class="small-location">
+                  <picture>
+                        <source srcset="{{ site.url }}/assets/img/CalligraphyLettering_location_horizontal_white.png"
+                        media="(min-width: 475px)">
+                        <img src="{{ site.url }}/assets/img/CalligraphyLettering_location_vertical_white.png" alt="" class="small-location">
+                  </picture>
                 </div>
                 <div class="cell small-1"></div>
               </div>
-              <img src="{{ site.url }}/assets/img/CalligraphyLettering_date_white_bold.png" alt="" class="">
+              <img src="{{ site.url }}/assets/img/CalligraphyLettering_date_white_bold.png" alt="" class="small-date">
             </div>
+        </div>  
+        <div class="show-for-medium">
+          <div class="fill-picture-medium"
+            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
           </div>
-          <div class="fill-picture show-for-medium hide-for-large" 
+        </div>
+        <div class="show-for-large">
+          <div class="fill-picture-large"
+            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
+          </div>
+        </div>
+
+      </div>  
+      
+  </div>
+          <!-- <div class="fill-picture show-for-medium hide-for-large" 
             style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.jpg');">
           </div>
           <div class="fill-picture-large show-for-large" 
             style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
           </div>
       </div>
-  </div>
+  </div> -->
   
   <!-- <div class="small-12 cell cell-block-y">
     
