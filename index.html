@@ -1,58 +1,64 @@
 ---
 layout: default
-title: Blowing Rock, North Carolina
+title: Celebrate love
 description: Use to start a new Github pages site.
 keywords: github pages, Jekyll, foundation 6
 footer: disable
-header_graphic: disable
+header_graphic: enable
 ---
 
 
   <div class="grid-y grid-frame">
-      <div class="cell small-5" id="calligraphy">
-        <div class="grid-x">
-            <div class="cell small-1"></div>
-            <div class="cell small-10">
+      <div class="cell small-5 medium-6 large-5 grid-container full" id="calligraphy">
+        <div class="grid-x grid-margin-y">
+            <div class="cell small-1 large-2"></div>
+            <div class="cell small-10 large-8">
               <picture>
-                <source srcset="{{ site.url }}/assets/img/CalligraphyLettering_Web-horizontal_blue.png"
+                <source srcset="{{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x1.gif"
                         media="(max-height: 550px)">  
-                <img src="{{ site.url }}/assets/img/CalligraphyLettering_Web-vertical_blue.png" alt="" class="hide-for-medium hide-for-large">
+                <img src="{{ site.url }}/img/home/blue/CalligraphyLettering_Web-vertical_blue.png" alt="" class="hide-for-medium hide-for-large">
               </picture>
                 
-                <img src="{{ site.url }}/assets/img/CalligraphyLettering_Web-horizontal_blue.png" alt="" class="show-for-medium mtl">
+                <img srcset="{{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x1.gif 1x,
+                             {{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x2.gif 2x" 
+                     src="{{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x2.gif"
+                     alt="Cameron and Jeremiah" 
+                     class="show-for-medium mtl mbl">
             </div>
-            <div class="cell small-1"></div>
+            <div class="cell small-1 large-2"></div>
+        </div>
+        <div class="grid-x grid-margin-y show-for-medium" id="medium-date">
+          <div class="cell medium-4 large-5"></div>
+          <div class="cell medium-4 large-2">
+            <img src="{{ site.url }}/img/home/blue/CalligraphyLettering_date.jpg" alt="" class="date">
+          </div>
+          <div class="cell medium-4 large-5"></div>
+        </div>
+        <div class="grid-x grid-margin-y show-for-medium" id="medium-location">
+          <div class="cell medium-3 large-4"></div>
+          <div class="cell medium-6 large-4">
+            <img src="{{ site.url }}/img/home/blue/CalligraphyLettering_location_horizontal.jpg" alt="" class="show-for-medium">
+          </div>
+          <div class="cell medium-3 large-4"></div>
+        </div>
+        <div class="grid-x grid-margin-y show-for-medium">
+          <div class="cell medium-4"></div>
+          <div class="cell medium-4">
+            <h5 class="hashtag-text">#fromfianceetobaarbe</h5>
+          </div>
+          <div class="cell medium-4"></div>
         </div>
       </div>
-      <!-- <div class="cell shrink" id="date">
-          <div class="grid-x">
-            <div class="cell small-5 medium-5"></div>
-            <div class="cell small-2 medium-2">
-                <img src="{{ site.url }}/assets/img/CalligraphyLettering_date.jpg" alt="">
-            </div>
-            <div class="cell small-5 medium-5"></div>
-          </div>  
-      </div>  -->
-      <!-- <div class="cell small 1">
-        <div class="grid-x">
-          <div class="cell small-3 medium-4"></div>
-          <div class="cell small-6 medium-4">
-            <img src="{{ site.url }}/assets/img/CalligraphyLettering_location_vertical.jpg" alt="" class="hide-for-medium">
-            <img src="{{ site.url }}/assets/img/CalligraphyLettering_location_horizontal.jpg" alt="" class="hide-for-medium">
-          </div>
-          <div class="cell small-3 medium-4"></div>
-        </div>
-      </div> -->
-      <div class="cell small-7" id="watercolor">
+      <div class="cell small-7 medium-6 large-7" id="watercolor">
         <div class="hide-for-medium"> <!-- display watercolor and text on mobile -->
             <div class="fill-picture" 
-              style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
+              style="background-image: url('{{ site.url }}/img/home/WatercolorLandscape_Web_large.png');">
             </div>
             <div class="small-details">
               <div class="grid-x">
                 <div class="cell small-2"></div>
                 <div class="cell small-8">
-                  <img src="{{ site.url }}/assets/img/hashtag_white.png" alt="" class="hashtag">
+                  <img src="{{ site.url }}/img/home/white/hashtag_white.png" alt="" class="hashtag">
                 </div>
                 <div class="cell small-2"></div>
               </div>
@@ -60,40 +66,28 @@ header_graphic: disable
                 <div class="cell small-1"></div>
                 <div class="cell small-10">
                   <picture>
-                        <source srcset="{{ site.url }}/assets/img/CalligraphyLettering_location_horizontal_white.png"
+                        <source srcset="{{ site.url }}/img/home/white/CalligraphyLettering_location_horizontal_white.png"
                         media="(min-width: 475px)">
-                        <img src="{{ site.url }}/assets/img/CalligraphyLettering_location_vertical_white.png" alt="" class="small-location">
+                        <img src="{{ site.url }}/img/home/white/CalligraphyLettering_location_vertical_white.png" alt="" class="small-location">
                   </picture>
                 </div>
                 <div class="cell small-1"></div>
               </div>
-              <img src="{{ site.url }}/assets/img/CalligraphyLettering_date_white_bold.png" alt="" class="small-date">
+              <img src="{{ site.url }}/img/home/white/CalligraphyLettering_date_white_bold.png" alt="" class="small-date">
             </div>
         </div>  
         <div class="show-for-medium">
           <div class="fill-picture-medium"
-            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
+            style="background-image: url('{{ site.url }}/img/home/WatercolorLandscape_Web_large.png');">
           </div>
         </div>
         <div class="show-for-large">
           <div class="fill-picture-large"
-            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
+            style="background-image: url('{{ site.url }}/img/home/WatercolorLandscape_Web_large.png');">
           </div>
         </div>
 
       </div>  
       
   </div>
-          <!-- <div class="fill-picture show-for-medium hide-for-large" 
-            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.jpg');">
-          </div>
-          <div class="fill-picture-large show-for-large" 
-            style="background-image: url('{{ site.url }}/assets/img/WatercolorLandscape_Web_large.png');">
-          </div>
-      </div>
-  </div> -->
-  
-  <!-- <div class="small-12 cell cell-block-y">
-    
-  </div> -->
-
+ 

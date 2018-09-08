@@ -7,8 +7,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.hashtag {
-  text-transform: lowercase;
+
+
+
+
+.date {
+  transform: scale(0.90, 0.90);
+  -ms-transform: scale(0.90, 0.90);
+  -webkit-transform: scale(0.90, 0.90);
 }
 
 .fill-picture {
@@ -53,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-height: 550px){
     display: none;
   }
+}
+.hashtag-text {
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .horizontal-location {
