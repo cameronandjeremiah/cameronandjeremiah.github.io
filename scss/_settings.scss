@@ -89,7 +89,10 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $white;
+$ivory: #fffff0;
+$floral-white: #fffaf0;
+$baby-powder: #fefefa;
+$body-background: $baby-powder;
 $body-font-color: $darkslateblue;//$black;
 $body-font-family: 'Nanum Myeongjo', serif;
 $body-antialiased: true;
@@ -137,7 +140,7 @@ $block-grid-max: 8;
 
 // 4. Base Typography
 // ------------------
-
+$hero-height: 500px;
 $header-font-family: "scrogglet", sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;

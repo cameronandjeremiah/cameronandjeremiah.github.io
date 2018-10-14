@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
 .date {
   transform: scale(0.90, 0.90);
   -ms-transform: scale(0.90, 0.90);
@@ -30,6 +32,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: $mistyrose;
 }
 
+.small-details {
+  position: absolute;
+  bottom: 1rem;
+}
+
 .small-location {
   @media (min-width: 474px){
     margin-bottom: 30px;
@@ -40,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   //padding-bottom: 25px;
 }
+
 .small-date{
   @media (max-height: 541px){
     display: none;
@@ -66,10 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 30px;
 }
 
-.small-details {
-  position: absolute;
-  bottom: 2rem;
-}
+
 
 .fill-picture {
   height: 100vh;
@@ -146,8 +151,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-bar {
-  // box-shadow: 0 0 10px rgba(138, 138, 138, 0.3);
-
+  box-shadow: 0 0 10px rgba(138, 138, 138, 0.3);
+  background: $body-background;
   .title-bar-right {
     flex: .5 0 0px;
   }
@@ -165,3 +170,174 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
  }
 
+.hero {
+ position:relative;
+ height: $hero-height;
+ width: 100%;
+ background-size: cover;
+ background-position: center;
+
+}
+
+.hero-overlay {
+  position:absolute;
+  width: 100%;
+  height: $hero-height;
+}
+ 
+.title--wrapper {
+  position: relative;
+  top: 50%;
+  h1 {
+    color: $baby-powder;
+  }
+}
+
+.page__title {
+  position: relative;
+  top: 50%;
+  text-align: center;
+
+}
+
+.page__hero-caption {
+
+}
+
+.text-container {
+  font-size: 16px;
+  font-family: 'Libre Baskerville';
+  text-align: center;
+  color: $darkslateblue
+}
+
+.icon-links li {
+  display: inline;
+  margin: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+
+  i {
+    color: $watermelon;
+  }
+}
+
+#map {
+  position: relative  ;
+  height: 200px;
+  width: 100%;
+}
+
+.page-hero-content{
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+.page-title {
+  color: $ivory;
+}
+
+.map {
+  position: absolute;
+  height: 200px;
+}
+
+.docs-component-inner {
+  margin-left: 2rem;
+}
+
+.docs-toc-wrap {
+  position: relative;
+}
+
+.sticky {
+ padding-left: 2rem;
+}
+// Flexbox Article
+.card-flex-article {
+
+  .card-divider {
+    display: flex;
+    background: transparent;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .avatar {
+      margin-right: 0.75rem;
+    }
+  }
+
+  .avatar {
+    position: relative;
+
+    img {
+      border-radius: 50%;
+    }
+
+    &.with-add-icon .fa {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: $alert-color;
+    }
+  }
+
+  .card-actions {
+    .fa:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+
+  .card-image {
+    position: relative;
+  }
+
+  .card-tag {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3%;
+  }
+
+  .card-section {
+    .article-title {
+      font-weight: bold;
+      font-size: 1.75rem;
+      margin-bottom: 0;
+    }
+
+    .article-details {
+      font-size: 0.75rem;
+      opacity: 0.5;
+      padding-bottom: 0.75rem;
+    }
+
+    .article-summary {
+      font-family: 'Merriweather', serif;
+    }
+  }
+
+  .user-info {
+    font-size: 0.75rem;
+
+    .user-name {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+
+  .notability {
+    font-size: 0.75rem;
+    opacity: 0.5;
+  }
+
+}
+
+.card {
+  width: 300px;
+}

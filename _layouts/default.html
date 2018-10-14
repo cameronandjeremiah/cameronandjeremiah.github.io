@@ -17,18 +17,17 @@
         <div class="cell shrink header">
               {% include nav.html %}
         </div>
-        <div class="cell auto body cell-block-container">
-            <!-- START BODY -->
-            {{ content }}
-            <!-- END BODY -->
-        </div>  <!-- end .body cell -->
         
+        <div class="cell auto body cell-block-container">
+           {{ content }}
+        </div> 
+            <!-- END BODY -->        
             <!-- START FOOTER -->
-        {% unless page.footer == 'disable' %}
+        {% if page.footer == 'enable' %}
         <div class="cell shrink footer">
               {% include footer.html %}
         </div> <!-- end .footer -->
-        {% endunless %}
+        {% endif %}
             <!-- END FOOTER -->
         
       </div>

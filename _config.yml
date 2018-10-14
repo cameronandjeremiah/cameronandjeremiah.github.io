@@ -10,7 +10,6 @@ location: Blowing Rock, North Carolina
 url :  "https://cameronandjeremiah.github.io"
 baseurl: ""
 
-
 # SEO Settings
 title_separator: "―"
 locale: "en"
@@ -30,9 +29,15 @@ analytics:
   google:
     tracking_id: ""
 
-# Build Settings
+# Services 
+mapbox:
+  accessToken: "pk.eyJ1Ijoib3BlbmFpciIsImEiOiJjaWxheGcxdzIwZGxydHlsenJpOXJ5azZxIn0.uZ-GuqO9YrQ6HIbMH6cX9w"
 
+    # Build Settings
+permalink: /:title/
 markdown : kramdown
+include :
+- _pages
 exclude :
   - node_modules
 plugins: 

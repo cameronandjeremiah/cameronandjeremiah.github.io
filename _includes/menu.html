@@ -1,21 +1,22 @@
 <li>
-   <a class="nav-font", href="">
+   <a class="nav-font", href="{{ site.url }}/our-story/">
     Our Story
    </a>
 </li>
 <li>
-  <a class="nav-font", href="">
+    {% unless page.header_graphic %}
+    <a href="{{ site.url }}">
+        <img class="show-for-large", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
+    </a>
+    {% endunless %}
+  </li>
+<li>
+  <a class="nav-font", href="{{ site.url }}/blowing-rock/">
     Blowing Rock
   </a>
 </li>
-<li>
-  {% unless page.header_graphic %}
-  <a href="{{ site.url }}">
-      <img class="show-for-large", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
-  </a>
-  {% endunless %}
-</li>
-<li>
+
+<!-- <li>
   <a class="nav-font", href="">
     Information
   </a>
@@ -24,4 +25,4 @@
   <a class="nav-font", href="">
     Registry
   </a>
-</li>
+</li> -->
