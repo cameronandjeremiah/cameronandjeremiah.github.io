@@ -1,30 +1,31 @@
-<div class="title-bar hide-for-medium" id="docTOC">
-  <div class="title-bar-left">
-      {% unless page.header_graphic %}
-      <a href="{{ site.url }}"><img src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="Cameron and Jeremiah"></a>
-      {% endunless %}
-  </div>
-  <div class="title-bar-right menu align-right mrm mts">
-      <li>
-        <button class="button clear large" data-toggle="offCanvas" type="button">
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </li>
-  </div>  
+<div class="title-bar hide-for-medium">
+      <div class="title-bar-left">
+          {% unless page.header_graphic %}
+          <a href="{{ site.url }}"><img src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="Cameron and Jeremiah"></a>
+          {% endunless %}
+      </div>
+      <div class="title-bar-right menu align-right mrm mts">
+          <li>
+            <button class="button clear large" data-toggle="offCanvas" type="button">
+              <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+          </li>
+      </div>  
 </div>
 <div class="grid-y show-for-medium mts hide-for-large">
-  <div class="grid-container mtm mbm">
+    <div class="grid-container mtm mbm">
     {% unless page.header_graphic %}
-      <a href="{{ site.url }}">
-          <img class="cell medium-header-img", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
-      </a> 
+        <a href="{{ site.url }}">
+            <img class="cell medium-header-img", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
+        </a> 
     {% endunless %}
     <div class="cell menu align-center">
         {% include menu.html %}
-     </div>
-  </div>
+        </div>
+    </div>
 </div>
 <div class="menu align-center mtm mbm grid-y simple show-for-large">
     {% include menu.html %}
 </div>
+
 

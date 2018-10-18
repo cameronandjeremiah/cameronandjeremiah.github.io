@@ -6,6 +6,7 @@ keywords:
 permalink: /blowing-rock/
 footer: disable
 header:
+  shadow: on
   image: blowing-rock-condo-pano.jpg
   overlay_filter:
   overlay_color: 
@@ -13,59 +14,157 @@ header:
 ---
 
 <div class="sections">
-  <section id="accomodations" data-magellan-target="accomodations">
-      <h2>Accomodations</h2>
-    <div class="card-grid grid-x mtl" id="accomodations">
-      <div class="cell large-3">
+  <section id="accomodations grid-container" data-magellan-target="accomodations">
+      <h2 class="section-title" >Accomodations</h2>
+    <div class="card-grid grid-x pvm" id="accomodations">
+      <div class="cell medium-6 large-12">
           {% include container.html 
             card-title="Eseeola Lodge"
             photo="/accomodations/eseeola-chairs.jpg"
-            description="This is a discription" 
+            description="Located at the foot of Grandfather Mountain in Linville, this bark-shingled resort will host our ceremony and reception." 
+            airport-code=""
             rooms="10"
-            star=""
-            hold-deadline=""
-            rate=""
-            star=""
+            travel-time=""
+            hold-deadline="December 1, 2019"
+            by-after="after"
+            rate="$349/night"
+            button_text="Book here"
+            button_icon="fas fa-check"
             link="http://www.eseeola.com/accommodations/"
+            map-link="https://goo.gl/maps/48wx6VNrtuT2"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
             %}
       </div>
-      <div class="cell large-3">
+      <div class="cell medium-6 large-12">
           {% include container.html 
             card-title="Holiday Inn Express - Blowing Rock South"
             photo="/accomodations/holiday-inn-express.jpg"
-            description="This is a discription" 
+            description="Minutes from Main Street and the Blue Ridge parkway, this hotel offers a convenient location. Mention the Cain Wedding when you book." 
+            airport-code=""
             rooms="20"
+            travel-time=""
             hold-deadline="April 17, 2019"
-            rate="$119.00/night + 12.5% tax"
-            star=""
+            by-after="by"
+            rate="$119.00/night"
+            button_text="Book here"
+            button_icon="fas fa-check"
             link="https://www.hiexpress.com/redirect?path=hd&brandCode=EX&localeCode=en&regionCode=1&hotelCode=BOORN&_PMID=99801505&GPC=CBG&viewfullsite=true"
+            map-link="https://goo.gl/maps/2STrBWPWU9G2"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
             %}   
       </div>
-      <div class="cell large-3">
+      <div class="cell medium-6 large-12">
           {% include container.html 
             card-title="New Public House & Hotel"
             photo="/accomodations/new-public-house.jpg"
             description="Reference the Cain/Baarbe Wedding" 
+            airport-code=""
             rooms="8"
+            travel-time=""
             hold-deadline="April 17, 2019"
-            rate="$275.00/night + 12.5% tax"
-            star=""
+            by-after="by"
+            rate="$275.00/night"
+            button_text="Book here"
             link="http://www.thenewpublichouse.com/lodging/"
+            map-link="https://goo.gl/maps/48wx6VNrtuT2"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
             %}   
       </div>
-
-      
-    </div>
-      
-
+      <div class="cell medium-6 large-12">
+          {% include container.html 
+            card-title="Chetola"
+            photo="/accomodations/new-public-house.jpg"
+            description="Reference the Cain/Baarbe Wedding" 
+            airport-code=""
+            rooms="8"
+            travel-time=""
+            hold-deadline="April 17, 2019"
+            by-after="by"
+            rate="$275.00/night"
+            button_text="Book here"
+            link="http://www.thenewpublichouse.com/lodging/"
+            map-link="https://goo.gl/maps/48wx6VNrtuT2"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
+            %}   
+      </div>
+      <div class="cell medium-6 large-12">
+          {% include container.html 
+            card-title="New Public House & Hotel"
+            photo="/accomodations/new-public-house.jpg"
+            description="Reference the Cain/Baarbe Wedding" 
+            airport-code=""
+            rooms="8"
+            travel-time=""
+            hold-deadline="April 17, 2019"
+            by-after="by"
+            rate="$275.00/night"
+            button_text="Book here"
+            link="http://www.thenewpublichouse.com/lodging/"
+            map-link="https://goo.gl/maps/48wx6VNrtuT2"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
+            %}   
+      </div>
+    </div>  
   </section>
-    
-    {% include map.html %}
-  <section id="travel" data-magellan-target="travel">
-    <h3>Travel</h3>
+  <section class="mtl" id="travel" data-magellan-target="travel">
+    <h2 class="section-title">Travel</h2>
+    <div class="text-container">
+        <p>Blowing Rock, North Carolina is about a 13 hour drive from Toronto.</p>
+    </div>
+    <div class="card-grid grid-x pvm" id="travel">
+        <div class="cell medium-6 large-12">
+            {% include container.html 
+              card-title="Charlotte Douglas Intl Airport"
+              photo="/travel/charlotte-airport.jpg"
+              description="We recommend flying into CLT. It is the closest airport, located about 90 miles away from Blowing Rock." 
+              airport-code="CLT"
+              rooms=""
+              travel-time="1 h 44 min"
+              hold-deadline=""
+              by-after=""
+              rate=""
+              button_text="Website"
+              button_icon="fas fa-external-link-alt"
+              link="http://www.cltairport.com/Pages/default.aspx"
+              map-link="https://www.google.ca/maps/dir/CLT+airport,+Josh+Birmingham+Parkway,+Charlotte,+NC,+USA/Blowing+Rock,+NC,+USA/@35.6745694,-81.5387103,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8856987db74ad489:0x1aba4a6f3cc4a737!2m2!1d-80.9473146!2d35.2144026!1m5!1m1!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!2m2!1d-81.6776059!2d36.135129!3e0"
+              location-text="Directions"
+              blank-fa-icon=""
+              blank=""
+              %}
+        </div>
+        <div class="cell medium-6 large-12">
+            {% include container.html 
+              card-title="Piedmont Triad Intl Airport"
+              photo="/travel/greensboro-airport.jpg"
+              description="This airport is located in Greensboro, NC. Because it is a smaller airport, international flights may be limited. Domestic discount flights, however, can often be found for as little as $29 one way." 
+              airport-code="PTI"
+              rooms=""
+              travel-time="2 h"
+              hold-deadline=""
+              by-after=""
+              rate=""
+              button_text="Website"
+              button_icon="fas fa-external-link-alt"
+              link="https://flyfrompti.com/"
+              map-link="https://www.google.ca/maps/dir/Piedmont+Triad+International+Airport+(GSO),+1000+Ted+Johnson+Pkwy,+Greensboro,+NC+27409,+USA/Blowing+Rock,+NC,+USA/@35.9525473,-83.0416453,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x885304a0c16ebc03:0x7cfb5c322ea44951!2m2!1d-79.9351805!2d36.1043671!1m5!1m1!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!2m2!1d-81.6776059!2d36.135129!3e0"
+              location-text="Directions"
+              blank-fa-icon=""
+              blank=""
+              %}
+        </div>
+      </div>
   </section>
    <section id="things_to_do" data-magellan-target="things_to_do">
       <h3>Things to Do</h3>
    </section>
-    
 </div>

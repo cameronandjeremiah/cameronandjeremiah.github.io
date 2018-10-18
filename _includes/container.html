@@ -1,37 +1,63 @@
-<div class="card-flex-article card">
-    <div class="card-image">
-      <img src="{{ site.url }}/img{{ include.photo }}">
-    </div>
-    <div class="card-section">
-      <h3 class="article-title">{{ include.card-title }}</h3>
-      <div class="article-details">
-        <span class="website">Website</span> &#8226;
-        <span class="time">Time</span> &#8226;
-        <span class="author">Author Name</span>
+<div class="card grid-container full mbl mtm mhl">
+    <div class="grid-x">
+        <div class="cell medium-12 large-5" style="background-image: url({{site.url}}/img{{include.photo}}); background-size: cover; background-position: center;">
+          <div class="card-image">
+              <img src="{{ site.url }}/img{{ include.photo }}" alt="{{ include.card-title }}" class="hide-for-large">
+          </div>
+        </div>
+            <div class="cell medium-12 large-7 card-body">
+              <div class="card-section mas">
+                  <h3 class="card-title">{{ include.card-title }}</h3>
+                  <div class="card-details mbm">
+                    {% unless include.airport-code == "" %}
+                      <div class="airport-code">
+                        <i class="fas fa-plane-departure"></i>
+                        {{ include.airport-code }}
+                      </div>&nbsp;
+                    {% endunless %}
+                    {% unless include.travel-time == "" %}
+                      <div id="travel-time">
+                        <i class="fas fa-map"></i>
+                        {{ include.travel-time }} to Blowing Rock
+                      </div>&nbsp;
+                    {% endunless %}
+                    {% unless include.rooms == "" %}
+                      <div class="rooms">
+                        <i class="fas fa-bed"></i>
+                        {{ include.rooms }} Rooms
+                      </div> &nbsp;
+                    {% endunless %}
+                    {% unless include.rate == "" %}
+                      <div class="rate">
+                        <i class="fas fa-dollar-sign"></i>
+                        {{ include.rate }}&nbsp;
+                      </div> 
+                    {% endunless %}
+                    {% unless include.hold-deadline == "" %}
+                      <div class="deadline card-details">
+                          <i class="fas fa-calendar-alt"></i>
+                          &nbsp;Reserve&nbsp;{{ include.by-after }}&nbsp;{{ include.hold-deadline }}&nbsp;
+                      </div> 
+                    {% endunless %}
+                    {% unless include.blank == "" %}
+                      <div class="blank">
+                          <i class="{{ include.blank-fa-icon }}"></i>  {{ include.blank }}
+                      </div>
+                    {% endunless %}
+                  </div>
+                  <p class="card-summary">{{ include.description }}</p>                   
+              </div>   
+              
+              <div class="card-buttons mlm">
+                <a href="{{ include.link }}" class="button">
+                  <i class="{{ include.button_icon}}"></i>
+                  {{ include.button_text }}
+                </a>
+                <a href="{{ include.map-link }}" class="button">
+                  <i class="fas fa-map-marker-alt"></i>  {{ include.location-text }}
+                </a>
+                
+              </div>
+            </div>
       </div>
-      <p class="article-summary">{{ include.description }}</p>
-    </div>
-     <div class="card-divider align-middle">
-       <div class="avatar with-add-icon">
-         <img src="https://placehold.it/35" alt="avatar" />
-         <i class="fa fa-plus-circle" aria-hidden="true"></i>
-       </div>
-      <div class="user-info">
-        <p class="user-name">Name</p>
-        <p class="category">added to <strong>Category</strong></p>
-      </div>
-    </div>
-    <div class="card-divider align-justify">
-      <div class="notability">
-        <span class="publications">Publication Number</span> &#8226;
-        <span class="likes"># Likes</span>
-      </div>
-      <div class="card-actions">
-        <i class="fa fa-heart-o" aria-hidden="true"></i>
-        <i class="fa fa-plus" aria-hidden="true"></i>
-        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  
-  
+</div>

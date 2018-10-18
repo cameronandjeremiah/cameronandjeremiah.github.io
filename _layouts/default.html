@@ -13,12 +13,12 @@
   <body>
     <div class="grid-container full fluid">
         {% include menu_off_canvas.html %}
-      <div class="grid-y grid-frame off-canvas-content" data-off-canvas-content>
-        <div class="cell shrink header">
+      <div class="grid-y grid-frame off-canvas-content" data-off-canvas-content id="all">
+        <div class="cell shrink header {% if page.header.shadow %}shadow{% endif %}" id="nav">
               {% include nav.html %}
         </div>
-        
-        <div class="cell auto body cell-block-container">
+        <div class="cell" id="sticky-top"></div>
+        <div class="cell auto body cell-block-container" id="cell-block-container">
            {{ content }}
         </div> 
             <!-- END BODY -->        
