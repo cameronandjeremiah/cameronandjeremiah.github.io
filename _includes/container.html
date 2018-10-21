@@ -1,60 +1,67 @@
-<div class="card grid-container full mbl mtm mhl">
+<div class="card grid-container full mbl mtm mhm">
     <div class="grid-x">
         <div class="cell medium-12 large-5" style="background-image: url({{site.url}}/img{{include.photo}}); background-size: cover; background-position: center;">
           <div class="card-image">
+            {% unless include.map_url == "" %}
+            <iframe src="{{ include.map_url }}" width="100%" height="325px" class="hide-for-large"></iframe>
+            <iframe src="{{ include.map_url }}" width="100%" height="{{ include.map-large-height }}290px" class="show-for-large"></iframe>
+            {% endunless %}
+            {% unless include.photo == "" %}
               <img src="{{ site.url }}/img{{ include.photo }}" alt="{{ include.card-title }}" class="hide-for-large">
+            {% endunless %}  
           </div>
         </div>
             <div class="cell medium-12 large-7 card-body">
               <div class="card-section mas">
-                  <h3 class="card-title">{{ include.card-title }}</h3>
+                  <h4 class="card-title">{{ include.card-title }}</h4>
                   <div class="card-details mbm">
                     {% unless include.airport-code == "" %}
                       <div class="airport-code">
-                        <i class="fas fa-plane-departure"></i>
-                        {{ include.airport-code }}
+                        <i class="fas fa-plane-departure"><span>&nbsp;&nbsp;{{ include.airport-code }}</span></i>
                       </div>&nbsp;
                     {% endunless %}
                     {% unless include.travel-time == "" %}
                       <div id="travel-time">
-                        <i class="fas fa-map"></i>
-                        {{ include.travel-time }} to Blowing Rock
+                        <i class="fas fa-map"><span>&nbsp;&nbsp;{{ include.travel-time }} to Blowing Rock </span></i>
                       </div>&nbsp;
-                    {% endunless %}
-                    {% unless include.rooms == "" %}
-                      <div class="rooms">
-                        <i class="fas fa-bed"></i>
-                        {{ include.rooms }} Rooms
-                      </div> &nbsp;
                     {% endunless %}
                     {% unless include.rate == "" %}
                       <div class="rate">
-                        <i class="fas fa-dollar-sign"></i>
-                        {{ include.rate }}&nbsp;
-                      </div> 
+                        <i class="fas fa-dollar-sign"><span>&nbsp;&nbsp;{{ include.rate }}</span></i>  
+                      </div> &nbsp;
+                    {% endunless %}
+                    {% unless include.rooms == "" %}
+                      <div class="rooms">
+                        <i class="fas fa-bed"><span>&nbsp;&nbsp;{{ include.rooms }} Rooms</span></i>  
+                      </div> &nbsp;
                     {% endunless %}
                     {% unless include.hold-deadline == "" %}
                       <div class="deadline card-details">
-                          <i class="fas fa-calendar-alt"></i>
-                          &nbsp;Reserve&nbsp;{{ include.by-after }}&nbsp;{{ include.hold-deadline }}&nbsp;
+                          <i class="fas fa-calendar-alt"><span>&nbsp;&nbsp;Reserve&nbsp;{{ include.by-after }}&nbsp;{{ include.hold-deadline }}&nbsp;</span></i>
                       </div> 
                     {% endunless %}
                     {% unless include.blank == "" %}
                       <div class="blank">
-                          <i class="{{ include.blank-fa-icon }}"></i>  {{ include.blank }}
+                          <i class="{{ include.blank-fa-icon }}"><span>{{ include.blank }}</span></i>  
                       </div>
                     {% endunless %}
                   </div>
-                  <p class="card-summary">{{ include.description }}</p>                   
+                  <p class="card-summary">
+                    {{ include.description }}
+                  </p>                   
               </div>   
               
               <div class="card-buttons mlm">
                 <a href="{{ include.link }}" class="button">
-                  <i class="{{ include.button_icon}}"></i>
-                  {{ include.button_text }}
+                  <span>
+                      <i class="{{ include.button_icon}}">&nbsp;&nbsp;{{ include.button_text }}</i>
+                      
+                  </span>
                 </a>
                 <a href="{{ include.map-link }}" class="button">
-                  <i class="fas fa-map-marker-alt"></i>  {{ include.location-text }}
+                  <span>
+                      <i class="fas fa-map-marker-alt">&nbsp;&nbsp;{{ include.location-text }}</i>  
+                  </span>
                 </a>
                 
               </div>

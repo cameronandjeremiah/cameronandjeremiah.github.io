@@ -12,20 +12,10 @@
           </li>
       </div>  
 </div>
-<div class="grid-y show-for-medium mts hide-for-large">
-    <div class="grid-container mtm mbm">
-    {% unless page.header_graphic %}
-        <a href="{{ site.url }}">
-            <img class="cell medium-header-img", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
-        </a> 
-    {% endunless %}
-    <div class="cell menu align-center">
-        {% include menu.html %}
-        </div>
-    </div>
+<div class="menu dropdown align-center mvm grid-y simple show-for-medium menu-hover-lines" data-dropdown-menu>
+  {% include menu.html %}
 </div>
-<div class="menu align-center mtm mbm grid-y simple show-for-large">
-    {% include menu.html %}
-</div>
+    
+
 
 

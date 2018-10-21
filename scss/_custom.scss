@@ -138,12 +138,7 @@ h2.section-title {
     url("font/scrogglet.eot") format('embedded-opentype');
 }
 
-.nav-font {
-  font-family: "scrogglet";
-  text-transform: uppercase;
-  font-size: 1.2em;
-  color: $darkslateblue;
-}
+
 
 //helper for font weight
 //Open+Sans:400,700,800|Raleway:400,200,700
@@ -185,12 +180,120 @@ menu.shadow{
 }
 
 .medium-header-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: auto;
+  display: flex;
+  // margin-left:1rem;
+  // margin-right: 1rem;
+  // width: 50%;
+  // height: auto;
  }
+
+ // Menu hover lines
+
+
+ .menu-hover-lines {
+   text-align: center;
+   text-transform: uppercase;
+   font-family: "scrogglet";
+   font-weight: 500;
+   font-size: 1.2em;
+   letter-spacing: 1px;
+   
+   transition: $menu-hover-lines-transition;
+   
+   li#calligraphy {
+    flex: .5 0 0px;
+   }
+   
+   li#calligraphy img{
+    width: 100%;
+   }
+   li#calligraphy a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+   }
+
+   li#calligraphy a::after {
+    height: 0;
+   }
+
+   li a {
+     padding-bottom: 4px !important;
+     color: $darkslateblue;
+     position: relative;
+     //margin-left: 1rem;
+   }
+   
+   li:first-child a {
+     margin-left: 1rem;
+   }
+   
+   li.active > a {
+     background-color: transparent;
+   }
+
+  //  a:before,
+   a::after {
+     height: $menu-hover-lines-border-width;
+     position: absolute;
+     content: '';
+    //  -webkit-transition: $menu-hover-lines-transition;
+    //  transition: $menu-hover-lines-transition;
+    // background-color: get-color(primary);
+     width: 0;
+   }
+
+  //  a:before{
+  //    top:0;
+  //    left: 0;
+  //  }
+
+   a::after{
+     bottom: 0;
+     right: 0;
+   }
+
+   a:hover,
+   li.active > a {
+     color: $body-font-color;
+     transition: $menu-hover-lines-transition;
+   }
+   
+  //  a:hover::before,
+  //  .active a::before,
+   a:hover::after, 
+   .active a::after {
+     width: 100%;
+   }
+ }
+
+ .submenu {
+   font-family: "Libre Baskerville";
+   font-size: .8rem;
+   border: 0;
+   background-color: $baby-powder;
+   box-shadow: 5px 5px 1px rgba(138, 138, 138, 0.1);
+   padding: 15px 0px;
+   text-transform: none;
+   justify-content: center;
+   a {
+     padding: 5%;
+   }
+   ul a {
+     margin-left: 0 !important;
+   }
+   a:hover{
+     color: $watermelon;
+   }
+ }
+
+ .nav-font {
+  font-family: "scrogglet";
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: $darkslateblue;
+  
+}
 
 .hero {
  position:relative;
@@ -223,17 +326,23 @@ menu.shadow{
 }
 
 .text-container {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Libre Baskerville';
   text-align: center;
   color: $darkslateblue
+}
+
+.text-container#extra-info {
+  font-size: .9rem;
+  font-style: italic;
+  margin: 3rem 4rem;
 }
 
 .icon-links li {
   
   display: inline;
   margin: 1rem;
-  margin-top: 3rem;
+  // margin-top: 3rem;
   text-align: center;
 
   i {
@@ -345,17 +454,19 @@ h4.card-title {
   // bottom: 0;
   div{
     font-size: 80%;
-    display: inline-block;
+    display: inline;
   }
- i {
-  margin: 2px 2px; 
+
+ span {
+  font-weight: 400;
+  line-height: 1.2em;
  }
 }
 
+.card-summary{
+  font-size: .9rem;
+}
 .card-buttons {
-  position: absolute;
-  bottom: 0;
-
   a {
     color: $baby-powder;
     font-weight: 600;
@@ -368,96 +479,7 @@ h4.card-title {
   }
 }
 
-.card-section>:last-child {
-  margin-bottom: 4rem;
-}
-
-// Flexbox Container
-.card-flex-article {
-
-  .card-divider {
-    display: flex;
-    background: transparent;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    .avatar {
-      margin-right: 0.75rem;
-    }
-  }
-
-  .avatar {
-    position: relative;
-
-    img {
-      border-radius: 50%;
-    }
-
-    &.with-add-icon .fa {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      color: $alert-color;
-    }
-  }
-
-  .card-actions {
-    .fa:not(:last-of-type) {
-      margin-right: 1rem;
-    }
-  }
-
-  .card-image {
-    background-position: contain;
-    width: 200px;
-    height: 100%;
-    min-width: 200px;
-  }
-
-  .card-tag {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 3%;
-  }
-
-  .card-section {
-    .article-title {
-      font-weight: bold;
-      font-size: 1.75rem;
-      margin-bottom: 0;
-    }
-
-    .article-details {
-      font-size: 0.75rem;
-      opacity: 0.5;
-      padding-bottom: 0.75rem;
-    }
-
-    .article-summary {
-      font-family: 'Merriweather', serif;
-    }
-  }
-
-  .user-info {
-    font-size: 0.75rem;
-
-    .user-name {
-      font-weight: bold;
-      margin-bottom: 0;
-    }
-  }
-
-  .notability {
-    font-size: 0.75rem;
-    opacity: 0.5;
-  }
-
-}
-
-
+// .card-section>:last-child {
+//   margin-bottom: 4rem;
+// }
 

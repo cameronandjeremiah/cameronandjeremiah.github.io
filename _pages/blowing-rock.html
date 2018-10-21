@@ -5,6 +5,7 @@ description:
 keywords:
 permalink: /blowing-rock/
 footer: disable
+
 header:
   shadow: on
   image: blowing-rock-condo-pano.jpg
@@ -14,28 +15,31 @@ header:
 ---
 
 <div class="sections">
-  <section id="accomodations grid-container" data-magellan-target="accomodations">
+  <section class="" id="accomodations" data-magellan-target="accomodations">
       <h2 class="section-title" >Accomodations</h2>
+      <div class="text-container" id="extra-info">
+          <p>We will be providing shuttle service to the reception venue at the Camp at Eseeola. Pick up locations will include Village Inn, Hillwinds Inn, Ridgeway Inn, the Holiday Inn Express, and Eseeola Lodge.</p>
+      </div>
     <div class="card-grid grid-x pvm" id="accomodations">
       <div class="cell medium-6 large-12">
           {% include container.html 
-            card-title="Eseeola Lodge"
-            photo="/accomodations/eseeola-chairs.jpg"
-            description="Located at the foot of Grandfather Mountain in Linville, this bark-shingled resort will host our ceremony and reception." 
+            card-title="The Village Inns"
+            photo="/accomodations/hillwinds-inn.jpg"
+            description="This family of inns are clustered around Blowing Rock. Group rates for Hillwinds Inn, Ridgeway Inn, and Village Inn will be posted by December." 
             airport-code=""
-            rooms="10"
+            rooms="64"
             travel-time=""
             hold-deadline="December 1, 2019"
             by-after="after"
-            rate="$349/night"
-            button_text="Book here"
-            button_icon="fas fa-check"
-            link="http://www.eseeola.com/accommodations/"
+            rate="$110.00/night"
+            button_icon="fas fa-external-link-alt"
+            button_text="Website"
+            link="http://www.thenewpublichouse.com/lodging/"
             map-link="https://goo.gl/maps/48wx6VNrtuT2"
             location-text="Location"
             blank-fa-icon=""
             blank=""
-            %}
+            %}   
       </div>
       <div class="cell medium-6 large-12">
           {% include container.html 
@@ -48,8 +52,8 @@ header:
             hold-deadline="April 17, 2019"
             by-after="by"
             rate="$119.00/night"
-            button_text="Book here"
-            button_icon="fas fa-check"
+            button_text="Book&nbsp;here"
+            button_icon="fas fa-external-link-alt"
             link="https://www.hiexpress.com/redirect?path=hd&brandCode=EX&localeCode=en&regionCode=1&hotelCode=BOORN&_PMID=99801505&GPC=CBG&viewfullsite=true"
             map-link="https://goo.gl/maps/2STrBWPWU9G2"
             location-text="Location"
@@ -59,15 +63,56 @@ header:
       </div>
       <div class="cell medium-6 large-12">
           {% include container.html 
+            card-title="Eseeola Lodge"
+            photo="/accomodations/eseeola-chairs.jpg"
+            description="Located at the foot of Grandfather Mountain in Linville, this bark-shingled resort will host our ceremony and reception. Booking opens in December." 
+            airport-code=""
+            rooms="10"
+            travel-time=""
+            hold-deadline="December 1, 2019"
+            by-after="after"
+            rate="$349/night"
+            button_text="Website"
+            button_icon="fas fa-external-link-alt"
+            link="http://www.eseeola.com/accommodations/"
+            map-link="https://goo.gl/maps/48wx6VNrtuT2"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
+            %}
+      </div>
+      <div class="cell medium-6 large-12">
+          {% include container.html 
+            card-title="Chetola Resort"
+            photo="/accomodations/chetola-resort.jpg"
+            description="This 87-acre resort is a 5 minute walk from Main Street, Blowing Rock. In addition to hotel rooms Chetola offers condos with 2 to 4 bedrooms. " 
+            airport-code=""
+            rooms=""
+            travel-time=""
+            hold-deadline=""
+            by-after="by"
+            rate="$275.00/night"
+            button_icon="fas fa-external-link-alt"
+            button_text="Book here"
+            link="https://www.chetola.com/"
+            map-link="https://goo.gl/maps/gciHQjW9Bcu"
+            location-text="Location"
+            blank-fa-icon=""
+            blank=""
+            %}   
+      </div>
+      <div class="cell medium-6 large-12">
+          {% include container.html 
             card-title="New Public House & Hotel"
             photo="/accomodations/new-public-house.jpg"
-            description="Reference the Cain/Baarbe Wedding" 
+            description="A cozy bed & breakfast, NPH is also one of our favorite places for Sunday brunch. Reference the Cain/Baarbe Wedding when booking." 
             airport-code=""
-            rooms="8"
+            rooms="4"
             travel-time=""
             hold-deadline="April 17, 2019"
             by-after="by"
             rate="$275.00/night"
+            button_icon="fas fa-external-link-alt"
             button_text="Book here"
             link="http://www.thenewpublichouse.com/lodging/"
             map-link="https://goo.gl/maps/48wx6VNrtuT2"
@@ -78,37 +123,19 @@ header:
       </div>
       <div class="cell medium-6 large-12">
           {% include container.html 
-            card-title="Chetola"
-            photo="/accomodations/new-public-house.jpg"
-            description="Reference the Cain/Baarbe Wedding" 
+            card-title="VRBO"
+            photo="/accomodations/vrbo.jpg"
+            description="There are a number of beautiful homes available to rent. We recommend we recommend looking around Main Street Blowing Rock, Alpine Ski Mountain, or Sugar Mountain" 
             airport-code=""
-            rooms="8"
+            rooms=""
             travel-time=""
-            hold-deadline="April 17, 2019"
-            by-after="by"
-            rate="$275.00/night"
-            button_text="Book here"
-            link="http://www.thenewpublichouse.com/lodging/"
-            map-link="https://goo.gl/maps/48wx6VNrtuT2"
-            location-text="Location"
-            blank-fa-icon=""
-            blank=""
-            %}   
-      </div>
-      <div class="cell medium-6 large-12">
-          {% include container.html 
-            card-title="New Public House & Hotel"
-            photo="/accomodations/new-public-house.jpg"
-            description="Reference the Cain/Baarbe Wedding" 
-            airport-code=""
-            rooms="8"
-            travel-time=""
-            hold-deadline="April 17, 2019"
-            by-after="by"
-            rate="$275.00/night"
-            button_text="Book here"
-            link="http://www.thenewpublichouse.com/lodging/"
-            map-link="https://goo.gl/maps/48wx6VNrtuT2"
+            hold-deadline=""
+            by-after=""
+            rate=""
+            button_icon="fas fa-external-link-alt"
+            button_text="Website"
+            link="https://www.vrbo.com/results?petIncluded=false&ssr=true&adultsCount=5&childrenCount=0&neLat=36.19126053759746&neLong=-81.65003503723369&swLat=36.0918648248316&swLong=-81.71812559528576&zoom=13&infantsCount=0&q=Blowing%20Rock%2C%20NC%2C%20USA&from-date=2019-05-15&to-date=2019-05-20"
+            map-link=""
             location-text="Location"
             blank-fa-icon=""
             blank=""
@@ -118,10 +145,110 @@ header:
   </section>
   <section class="mtl" id="travel" data-magellan-target="travel">
     <h2 class="section-title">Travel</h2>
-    <div class="text-container">
+    <div class="text-container"id="extra-info">
         <p>Blowing Rock, North Carolina is about a 13 hour drive from Toronto.</p>
     </div>
-    <div class="card-grid grid-x pvm" id="travel">
+    <div class="card-grid grid-x pvm">
+        <div class="cell medium-6 large-12">
+            {% include container.html 
+              card-title="Charlotte Douglas Intl Airport"
+              photo=""
+              map_url="https://www.google.com/maps/d/u/0/embed?mid=1Jb4WhdJxMynFVTTRDbkEHi4_OwFkj91E"
+              map-large-height="270px"
+              description="We recommend flying into CLT. It is the closest airport, located about 90 miles away from Blowing Rock." 
+              airport-code="CLT"
+              rooms=""
+              travel-time="1 h 44 min"
+              hold-deadline=""
+              by-after=""
+              rate=""
+              button_text="Website"
+              button_icon="fas fa-external-link-alt"
+              link="http://www.cltairport.com/Pages/default.aspx"
+              map-link="https://www.google.ca/maps/dir/CLT+airport,+Josh+Birmingham+Parkway,+Charlotte,+NC,+USA/Blowing+Rock,+NC,+USA/@35.6745694,-81.5387103,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8856987db74ad489:0x1aba4a6f3cc4a737!2m2!1d-80.9473146!2d35.2144026!1m5!1m1!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!2m2!1d-81.6776059!2d36.135129!3e0"
+              location-text="Directions"
+              blank-fa-icon=""
+              blank=""
+              %}
+        </div>
+        <div class="cell medium-6 large-12">
+            {% include container.html 
+              card-title="Piedmont Triad Intl Airport"
+              photo=""
+              map_url="https://www.google.com/maps/d/u/0/embed?mid=17QgKYXiXo-LZUkjXfeqWVhBT96WMM9jy"
+              map-large-height="325px"
+              description="This airport is located in Greensboro, NC. Because it is a smaller airport, international flights may be limited. Domestic discount flights, however, can often be found for as little as $29 one way." 
+              airport-code="PTI"
+              rooms=""
+              travel-time="2 h"
+              hold-deadline=""
+              by-after=""
+              rate=""
+              button_text="Website"
+              button_icon="fas fa-external-link-alt"
+              link="https://flyfrompti.com/"
+              map-link="https://www.google.ca/maps/dir/Piedmont+Triad+International+Airport+(GSO),+1000+Ted+Johnson+Pkwy,+Greensboro,+NC+27409,+USA/Blowing+Rock,+NC,+USA/@35.9525473,-83.0416453,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x885304a0c16ebc03:0x7cfb5c322ea44951!2m2!1d-79.9351805!2d36.1043671!1m5!1m1!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!2m2!1d-81.6776059!2d36.135129!3e0"
+              location-text="Directions"
+              blank-fa-icon=""
+              blank=""
+              %}
+        </div>
+      </div>
+  </section>
+  <section id="things_to_do" data-magellan-target="things_to_do">
+    <h2 class="section-title">Things to Do</h2>
+  <div class="text-container" id="extra-info">
+      <p>Blowing Rock, North Carolina is about a 13 hour drive from Toronto.</p>
+  </div>
+  <div class="card-grid grid-x pvm">
+      <div class="cell medium-6 large-12">
+          {% include container.html 
+            card-title="Charlotte Douglas Intl Airport"
+            photo="/travel/charlotte-airport.jpg"
+            description="We recommend flying into CLT. It is the closest airport, located about 90 miles away from Blowing Rock." 
+            airport-code="CLT"
+            rooms=""
+            travel-time="1 h 44 min"
+            hold-deadline=""
+            by-after=""
+            rate=""
+            button_text="Website"
+            button_icon="fas fa-external-link-alt"
+            link="http://www.cltairport.com/Pages/default.aspx"
+            map-link="https://www.google.ca/maps/dir/CLT+airport,+Josh+Birmingham+Parkway,+Charlotte,+NC,+USA/Blowing+Rock,+NC,+USA/@35.6745694,-81.5387103,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8856987db74ad489:0x1aba4a6f3cc4a737!2m2!1d-80.9473146!2d35.2144026!1m5!1m1!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!2m2!1d-81.6776059!2d36.135129!3e0"
+            location-text="Directions"
+            blank-fa-icon=""
+            blank=""
+            %}
+      </div>
+      <div class="cell medium-6 large-12">
+          {% include container.html 
+            card-title="Piedmont Triad Intl Airport"
+            photo="/travel/greensboro-airport.jpg"
+            description="This airport is located in Greensboro, NC. Because it is a smaller airport, international flights may be limited. Domestic discount flights, however, can often be found for as little as $29 one way." 
+            airport-code="PTI"
+            rooms=""
+            travel-time="2 h"
+            hold-deadline=""
+            by-after=""
+            rate=""
+            button_text="Website"
+            button_icon="fas fa-external-link-alt"
+            link="https://flyfrompti.com/"
+            map-link="https://www.google.ca/maps/dir/Piedmont+Triad+International+Airport+(GSO),+1000+Ted+Johnson+Pkwy,+Greensboro,+NC+27409,+USA/Blowing+Rock,+NC,+USA/@35.9525473,-83.0416453,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x885304a0c16ebc03:0x7cfb5c322ea44951!2m2!1d-79.9351805!2d36.1043671!1m5!1m1!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!2m2!1d-81.6776059!2d36.135129!3e0"
+            location-text="Directions"
+            blank-fa-icon=""
+            blank=""
+            %}
+      </div>
+    </div>
+  </section>
+  <section id="resturants" data-magellan-target="resturants">
+      <h2 class="section-title">Resturants</h2>
+    <div class="text-container" id="extra-info">
+        <p>Blowing Rock, North Carolina is about a 13 hour drive from Toronto.</p>
+    </div>
+    <div class="card-grid grid-x pvm" id="resturants">
         <div class="cell medium-6 large-12">
             {% include container.html 
               card-title="Charlotte Douglas Intl Airport"
@@ -163,8 +290,5 @@ header:
               %}
         </div>
       </div>
-  </section>
-   <section id="things_to_do" data-magellan-target="things_to_do">
-      <h3>Things to Do</h3>
-   </section>
+    </section>
 </div>

@@ -3,12 +3,12 @@ layout: default
 title: Celebrate love
 description: We're so excited to share our special day with you! Here you'll find all the information you need as you make plans to attend our wedding.  
 keywords: wedding, marriage, love, blowing rock
-header_graphic: enable
+header_graphic: disable
 ---
 
 
   <div class="grid-y grid-frame">
-      <div class="cell small-6 medium-6 large-5 grid-container full" id="calligraphy">
+      <div class="cell small-6 medium-6 large-6 grid-container full" id="calligraphy">
         <div class="grid-x grid-margin-y">
             <div class="cell small-1 large-2"></div>
             <div class="cell small-10 large-8">
@@ -18,7 +18,7 @@ header_graphic: enable
                 <img src="{{ site.url }}/img/home/blue/CalligraphyLettering_Web-vertical_blue.png" alt="" class="hide-for-medium hide-for-large">
               </picture>
                 
-                <img srcset="{{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x1.gif 1x,
+                <img srcset="{{ site.url }}     /img/home/blue/CalligraphyLettering_horizontal_blue_x1.gif 1x,
                              {{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x2.gif 2x" 
                      src="{{ site.url }}/img/home/blue/CalligraphyLettering_horizontal_blue_x2.gif"
                      alt="Cameron and Jeremiah" 
@@ -29,7 +29,12 @@ header_graphic: enable
         <div class="grid-x grid-margin-y show-for-medium" id="medium-date">
           <div class="cell medium-4 large-5"></div>
           <div class="cell medium-4 large-2">
-            <img src="{{ site.url }}/img/home/blue/CalligraphyLettering_date_babypowder.gif" alt="" class="date">
+            <picture>
+              <source srcset="{{ site.url }}/img/home/blue/CalligraphyLettering_date_babypowder.gif"
+                      media="(max-height: 550px)">
+              <img src="{{ site.url }}/img/home/blue/CalligraphyLettering_date_babypowder.gif" alt="" class="date show-for-medium">
+            </picture> 
+            
           </div>
           <div class="cell medium-4 large-5"></div>
         </div>
@@ -48,7 +53,7 @@ header_graphic: enable
           <div class="cell medium-4"></div>
         </div>
       </div>
-      <div class="cell small-6 medium-6 large-7" id="watercolor">
+      <div class="cell small-6 medium-6 large-6" id="watercolor">
         <div class="hide-for-medium"> <!-- display watercolor and text on mobile -->
             <div class="fill-picture" 
               style="background-image: url('{{ site.url }}/img/home/WatercolorLandscape_Web_large.png');">
