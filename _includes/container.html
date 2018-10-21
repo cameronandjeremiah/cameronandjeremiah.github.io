@@ -4,7 +4,7 @@
           <div class="card-image">
             {% unless include.map_url == "" %}
             <iframe src="{{ include.map_url }}" width="100%" height="325px" class="hide-for-large"></iframe>
-            <iframe src="{{ include.map_url }}" width="100%" height="{{ include.map-large-height }}290px" class="show-for-large"></iframe>
+            <iframe src="{{ include.map_url }}" width="100%" height="{{ include.map-large-height }}" class="show-for-large"></iframe>
             {% endunless %}
             {% unless include.photo == "" %}
               <img src="{{ site.url }}/img{{ include.photo }}" alt="{{ include.card-title }}" class="hide-for-large">
