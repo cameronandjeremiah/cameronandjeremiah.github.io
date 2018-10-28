@@ -81,7 +81,7 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
-);
+); 
 
 // Start Supporter Colors
 $light-gray: #e6e6e6;
@@ -492,9 +492,7 @@ $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
 
-// Custon
-$menu-hover-lines-transition: all 0.35s ease;
-$menu-hover-lines-border-width: 3px;
+
 
 // 24. Meter
 // ---------

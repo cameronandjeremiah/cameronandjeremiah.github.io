@@ -5,16 +5,16 @@
     </a>
   </li>
   {% unless page.header_graphic %}
-    <li id="calligraphy" class="hide-for-small">
+    <li id="calligraphy" class="show-for-medium">
       <a href="{{ site.url }}">
-          <img class="medium-header-img hide-for-small", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
+          <img class="medium-header-img show-for-medium", src="{{ site.url }}/img/nav/CalligraphyLettering_Web-01_test.png" alt="">
       </a>
     </li>
   {% endunless %}
   
-  <li class="active">
+  <li>
     <a href="{{ site.url }}/blowing-rock/">Blowing Rock</a>
-    <ul>
+    <ul class="submenu">
       <li><a href="{{ site.url }}/blowing-rock/#accomodations">Accomodations</a></li>
       <li><a href="{{ site.url }}/blowing-rock/#travel">Travel</a></li>
       <li><a href="{{ site.url }}/blowing-rock/#todo">Things to Do</a></li>
