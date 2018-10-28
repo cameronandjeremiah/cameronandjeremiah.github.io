@@ -498,3 +498,63 @@ h4.card-title {
 //   margin-bottom: 4rem;
 // }
 
+
+.footer {
+  height: 300px;
+
+  #rhotodendron {
+    position: flex;
+    left:0;
+    bottom:0;
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+  }
+
+  #date{
+    -webkit-transform: scale(.75);
+    -ms-transform: scale(.75);
+    transform: scale(.75);
+  }
+  #location{
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+  }
+  #info{
+    bottom: 50;
+    text-align: right;
+
+  }
+}
+
+// TEST - Delete these or modify them
+
+.test-bar {
+  width: 100%;
+  z-index: 10;
+  transition: height .25s ease;
+  height: 4.5em;
+  background-color: #2c3840;
+}
+
+.test-bar .test-bar-right, 
+.test-bar .test-bar-left {
+  transition: padding-top .25s ease;
+  padding-top: 1.4em;
+}
+.test-bar.shrink {
+  height: 3em;
+}
+.test-bar.shrink .test-bar-right, 
+.test-bar.shrink .test-bar-left {
+  padding-top: 0em;
+}
+.test-bar .dropdown.menu li {
+  float: left;
+}
+.test-bar .dropdown.menu .is-dropdown-submenu {
+  border: none;
+  background-color: #2c3840;
+}
+

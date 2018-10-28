@@ -2,11 +2,11 @@
 
 <!--
   Cameron and Jeremiah's Wedding Website
-  Built with love by Jeremiah and Baker
+  Built with love by Jeremiah
   Based on Daigo Fujiwara's Jekyll-Foundation 6 Theme
 -->
 
-<html class="no-js">
+<html>
   <head>
     {% include head.html %}
   </head>        
@@ -17,18 +17,19 @@
         <div class="cell shrink header {% if page.header.shadow %}shadow{% endif %}" id="nav">
               {% include nav.html %}
         </div>
-        <div class="cell" id="sticky-top"></div>
-        <div class="cell auto body cell-block-container" id="cell-block-container">
+        <div class="cell auto body cell-block cell-block-container" id="cell-block-container">
            {{ content }}
+          <!-- START FOOTER -->
+           {% if page.footer == 'enable' %}
+              <div class="shrink footer grid-container full">
+                  {% include footer.html %}
+              </div> 
+           {% endif %}
+            <!-- END FOOTER -->
         </div> 
             <!-- END BODY -->        
             <!-- START FOOTER -->
-        {% if page.footer == 'enable' %}
-        <div class="cell shrink footer">
-              {% include footer.html %}
-        </div> <!-- end .footer -->
-        {% endif %}
-            <!-- END FOOTER -->
+        
         
       </div>
     </div>

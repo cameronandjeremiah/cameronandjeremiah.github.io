@@ -1,6 +1,6 @@
 <div class="card grid-container full mbl mtm mhm">
     <div class="grid-x">
-        <div class="cell medium-12 large-5" style="background-image: url({{site.url}}/img{{include.photo}}); background-size: cover; background-position: {{include.photo-position|default:center}};">
+        <div class="cell medium-12 large-5" style="background-image: url({{site.url}}/img{{include.photo}}); background-size: cover; background-position:{{include.photo-position|default:center}};">
           <div class="card-image">
             {% unless include.map_url == "" %}
             <div class="overlay" id="card" onClick="style.pointerEvents='none'"></div>
