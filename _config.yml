@@ -27,7 +27,7 @@ brand : My Project
 analytics:
   provider: "google"
   google:
-    tracking_id: ""
+    tracking_id: "UA-92975012-2"
 
 # Services 
 mapbox:
