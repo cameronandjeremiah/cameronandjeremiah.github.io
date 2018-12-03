@@ -74,7 +74,7 @@ h2.section-title {
     -ms-transform: scale(0.75, 0.75);
     -webkit-transform: scale(0.75, 0.75);
   }
-  @media (max-height: 550px){
+  @media (max-height: 613px){
     display: none;
   }
 }
@@ -415,6 +415,22 @@ menu.shadow{
   }
 
 }
+
+.our_story{
+  margin: 5rem 1rem;
+  text-align: justify;
+  img {
+    margin: 2rem 0rem; 
+    border-radius: 2%;
+    width: 100%;
+  }
+  #roses{
+    width: 40%;
+    height: auto;
+    float:left;
+  }
+}
+
 
 // // Horizontal Cards
 // @media screen and (min-width: 64em) {
